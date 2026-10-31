@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supreme Silpack® "S" Line | Polypropylene Sheets for Print &amp; Advertising Grade | Abhinandan Plastopack</title>
+  <meta name="description" content="Official Supreme Silpack 'S' Line polypropylene fluted sheets (2mm-10mm, up to 1500mm width). Specifically engineered for advertising, screen & UV digital printing, retail POS displays, signage boards, and stationery products. Distributed by Abhinandan Plastopack, Ahmedabad.">
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .silpack-hero-section {
+      background: linear-gradient(135deg, #091e3a 0%, #173b6c 55%, #1e4f8a 100%);
+      color: #ffffff;
+      padding: 55px 0 45px;
+      position: relative;
+      overflow: hidden;
+    }
+    .silpack-hero-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .silpack-stat-badge {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+    .silpack-stat-val {
+      display: block;
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #38bdf8;
+      font-family: var(--font-heading);
+      line-height: 1.2;
+    }
+    .silpack-stat-lbl {
+      font-size: 0.74rem;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .gallery-thumb-item {
+      cursor: pointer;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+      padding: 6px;
+      background: #ffffff;
+      transition: all 0.2s ease;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .gallery-thumb-item:hover, .gallery-thumb-item.active {
+      border-color: #2563eb;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+      transform: translateY(-2px);
+    }
+    .gallery-thumb-item img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+    .spec-table-custom {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      border: 1px solid #e2e8f0;
+    }
+    .spec-table-custom th {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 14px 18px;
+      font-size: 0.88rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-align: left;
+    }
+    .spec-table-custom td {
+      padding: 13px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.92rem;
+      color: #334155;
+    }
+    .spec-table-custom tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+    .spec-table-custom tr:hover td {
+      background: #f1f5f9;
+    }
+    .benefit-badge-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 22px;
+      transition: all 0.25s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .benefit-badge-card:hover {
+      border-color: #2563eb;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+    }
+    .benefit-icon-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(37, 99, 235, 0.1);
+      color: #2563eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+    }
+    .faq-accordion-item {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .faq-accordion-item:hover {
+      border-color: #cbd5e1;
+    }
+    .faq-question {
+      padding: 18px 22px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #0f172a;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-question i {
+      font-size: 0.85rem;
+      color: #64748b;
+      transition: transform 0.2s;
+    }
+    .faq-accordion-item.active .faq-question i {
+      transform: rotate(180deg);
+      color: #2563eb;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background: #f8fafc;
+      color: #475569;
+      font-size: 0.94rem;
+      line-height: 1.6;
+    }
+    .faq-accordion-item.active .faq-answer {
+      max-height: 300px;
+      padding: 0 22px 18px;
+    }
+  
+/* Silpack 3 Buttons in 1 Line */
+.silpack-action-btn-row {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  margin-top: 24px !important;
+  padding-top: 20px !important;
+  border-top: 1px solid #e2e8f0 !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.silpack-action-btn-row .btn-action-col {
+  width: 100% !important;
+  min-height: 48px !important;
+  padding: 12px 6px !important;
+  font-family: var(--font-heading, inherit) !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  border-radius: 6px !important;
+  box-sizing: border-box !important;
+  gap: 6px !important;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+}
+
+.silpack-action-btn-row .btn-action-col i {
+  font-size: 1rem !important;
+  flex-shrink: 0 !important;
+}
+
+.silpack-action-btn-row .btn-action-col span {
+  white-space: nowrap !important;
+}
+
+.silpack-action-btn-row .btn-whatsapp-col {
+  background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid #15803d !important;
+}
+.silpack-action-btn-row .btn-whatsapp-col:hover {
+  background: linear-gradient(180deg, #27d467 0%, #15803d 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4) !important;
+}
+
+.silpack-action-btn-row .btn-call-col {
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid #0f172a !important;
+}
+.silpack-action-btn-row .btn-call-col:hover {
+  background: linear-gradient(180deg, #334155 0%, #1e293b 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.4) !important;
+}
+
+.silpack-action-btn-row .btn-quote-col {
+  background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid #b91c1c !important;
+  text-transform: uppercase !important;
+  font-size: 0.82rem !important;
+}
+.silpack-action-btn-row .btn-quote-col:hover {
+  background: linear-gradient(180deg, #f87171 0%, #b91c1c 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.4) !important;
+}
+
+@media (max-width: 900px) {
+  .silpack-action-btn-row {
+    gap: 6px !important;
+  }
+  .silpack-action-btn-row .btn-action-col {
+    font-size: 0.78rem !important;
+    padding: 10px 4px !important;
+    gap: 4px !important;
+  }
+  .silpack-action-btn-row .btn-quote-col {
+    font-size: 0.74rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .silpack-action-btn-row {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  .silpack-action-btn-row .btn-action-col {
+    font-size: 0.92rem !important;
+    padding: 12px 16px !important;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          <a href="tel:+918511879428">+91 85118 79428</a> / <a href="tel:+916355517631">+91 63555 17631</a>
+        </span>
+        <span class="top-bar-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:crates07@gmail.com">crates07@gmail.com</a>
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Sanathal Circle &amp; Usmanpura, Ahmedabad</span>
+        </span>
+        <span class="top-badge">
+          <i class="fa-solid fa-award"></i> Supreme Authorized Distributor
+        </span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header-main">
+    <div class="container header-inner">
+      <div class="brand-group">
+        <a href="index.html" class="brand-supreme" title="Supreme Industries Limited">
+          <img src="assets/images/supreme-logo.png" alt="Supreme - People who know plastics best" class="supreme-logo-img">
+        </a>
+        <div class="brand-separator"></div>
+        <div class="distributor-wrapper">
+          <span class="distributor-label">Distributed by</span>
+          <a href="index.html" class="distributor-title">
+            <span class="distributor-name">ABHINANDAN PLASTOPACK</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link">About Us</a>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="javascript:void(0)" class="nav-link active" role="button" aria-haspopup="true" aria-expanded="false">
+            Products <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="crates.html" class="dropdown-item">
+              <span>Crates</span> <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+            </a>
+
+            <!-- Pallets Submenu with Roto & Injection Pallets -->
+            <div class="dropdown-submenu">
+              <a href="pallets.html" class="dropdown-item has-sub">
+                <span>Pallets</span> <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+              </a>
+              <div class="submenu-menu">
+                <a href="roto-pallets.html" class="dropdown-item">
+                  <i class="fa-solid fa-recycle" style="color: #dc2626; font-size: 0.8rem;"></i>
+                  <span>Roto Moulded Pallets</span>
+                </a>
+                <a href="injection-pallets.html" class="dropdown-item">
+                  <i class="fa-solid fa-industry" style="color: #2563eb; font-size: 0.8rem;"></i>
+                  <span>Injection Moulded Pallets</span>
+                </a>
+              </div>
+            </div>
+
+            <a href="dustbins.html" class="dropdown-item">
+              <span>Dustbins</span> <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+            </a>
+
+            <!-- Silpack Submenu with "H" Line & "S" Line -->
+            <div class="dropdown-submenu">
+              <a href="silpack.html" class="dropdown-item has-sub active">
+                <span>Silpack</span> <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+              </a>
+              <div class="submenu-menu">
+                <a href="silpack-h-line.html" class="dropdown-item">
+                  <i class="fa-solid fa-boxes-packing" style="color: #dc2626; font-size: 0.8rem;"></i>
+                  <span>"H" Line</span>
+                </a>
+                <a href="silpack-s-line.html" class="dropdown-item active">
+                  <i class="fa-solid fa-print" style="color: #2563eb; font-size: 0.8rem;"></i>
+                  <span>"S" Line</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="infrastructure.html" class="nav-link">Infrastructure</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+      </nav>
+
+      <div class="header-action">
+        <a href="contact.html#quote-form" class="btn btn-primary">
+          <i class="fa-solid fa-file-invoice"></i> Get Quote
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="silpack-hero-section">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: #94a3b8; margin-bottom: 14px;">
+        <a href="index.html" style="color: #94a3b8; text-decoration: none;">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+        <a href="silpack.html" style="color: #cbd5e1; text-decoration: none;">Silpack</a>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+        <span style="color: #ffffff; font-weight: 600;">"S" Line (Print &amp; Advertising Grade)</span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+        <div>
+          <span style="display: inline-block; background: #2563eb; color: #ffffff; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 14px; border-radius: 4px; margin-bottom: 14px;">
+            <i class="fa-solid fa-print"></i> Print, Signage &amp; Display Grade PP Flute Sheet
+          </span>
+          <h1 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 14px; color: #ffffff;">
+            Supreme Silpack® "S" Line
+          </h1>
+          <p style="font-size: 1.05rem; line-height: 1.6; color: #cbd5e1; margin-bottom: 24px;">
+            Engineered in an "S" flute board construction for optimum print surface smoothness, superior ink adhesion, and brilliant color reproduction. Designed specifically for outdoor signage boards, retail POS displays, exhibition booths, promotional kiosks, and stationery products.
+          </p>
+
+          <!-- Quick Stat Grid -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 28px;">
+            <div class="silpack-stat-badge">
+              <span class="silpack-stat-val">2 – 10 mm</span>
+              <span class="silpack-stat-lbl">Thickness Range</span>
+            </div>
+            <div class="silpack-stat-badge">
+              <span class="silpack-stat-val">Corona</span>
+              <span class="silpack-stat-lbl">Treated Surface</span>
+            </div>
+            <div class="silpack-stat-badge">
+              <span class="silpack-stat-val">1500 mm</span>
+              <span class="silpack-stat-lbl">Max Sheet Width</span>
+            </div>
+            <div class="silpack-stat-badge">
+              <span class="silpack-stat-val">100%</span>
+              <span class="silpack-stat-lbl">Recyclable PP</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://api.whatsapp.com/send?phone=918511879428&text=Hello%20Abhinandan%20Plastopack,%20I%20am%20interested%20in%20Supreme%20Silpack%20S-Line%20Print%20and%20Advertising%20Polypropylene%20Sheets" target="_blank" class="btn btn-whatsapp-lg" style="padding: 13px 24px;">
+              <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+            </a>
+            <a href="contact.html#quote-form" class="btn btn-primary" style="padding: 13px 26px;">
+              <i class="fa-solid fa-file-invoice"></i> Request Factory Quote
+            </a>
+            <a href="silpack-h-line.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 13px 20px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); color: #ffffff; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+              <span>View "H" Line (Industrial Grade)</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Card -->
+        <div style="background: #ffffff; border-radius: 14px; padding: 18px; box-shadow: 0 20px 45px rgba(0,0,0,0.35);">
+          <div style="background: #f8fafc; border-radius: 10px; padding: 24px; text-align: center; border: 1px solid #e2e8f0; position: relative;">
+            <span style="position: absolute; top: 12px; left: 12px; background: #2563eb; color: #fff; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 4px;">
+              S-Flute Print Board
+            </span>
+            <img src="assets/images/silpack/s_line_main.jpg" alt="Supreme Silpack S-Line Print and Advertising Fluted Board" style="max-height: 280px; width: auto; max-width: 100%; object-fit: contain; display: inline-block;">
+          </div>
+          <div style="padding: 14px 8px 4px; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: #475569; font-weight: 600;">
+            <span><i class="fa-solid fa-palette" style="color: #2563eb;"></i> High-Resolution Print Ready</span>
+            <span><i class="fa-solid fa-cloud-sun" style="color: #ea580c;"></i> Outdoor Weatherproof</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Product Detail Layout -->
+  <main class="product-detail-fullpage section-py" style="background: #f8fafc; padding: 50px 0;">
+    <div class="container">
+      <div class="product-detail-layout" style="display: grid; grid-template-columns: 460px 1fr; gap: 40px; align-items: start;">
+
+        <!-- LEFT COLUMN: INTERACTIVE GALLERY & QUALITY CERTIFICATIONS -->
+        <div class="detail-gallery-column">
+          <div class="detail-main-stage" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: relative;">
+            <span class="detail-badge-pill" style="position: absolute; top: 14px; left: 14px; background: #2563eb; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 4px; z-index: 10;">
+              Silpack® "S" Line
+            </span>
+            <div class="detail-main-img-box" style="padding: 35px 25px; min-height: 350px; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, #ffffff 40%, #f1f5f9 100%);">
+              <img id="silpackMainImg" src="assets/images/silpack/s_line_main.jpg" alt="Supreme Silpack S-Line Main View" style="max-height: 280px; width: auto; max-width: 100%; object-fit: contain; transition: opacity 0.2s ease;">
+            </div>
+            <div class="detail-stage-footer" style="background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 12px 18px; display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 600; color: #475569;">
+              <span><i class="fa-solid fa-certificate" style="color: #2563eb;"></i> Genuine Supreme Industries</span>
+              <span><i class="fa-solid fa-award" style="color: #10b981;"></i> Corona Treated Surface</span>
+            </div>
+          </div>
+
+          <!-- Gallery Thumbnails -->
+          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <div style="font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-images"></i> Product Views &amp; Surface Samples
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+              <div class="gallery-thumb-item active" onclick="switchSilpackImg('assets/images/silpack/s_line_main.jpg', this)">
+                <img src="assets/images/silpack/s_line_main.jpg" alt="Silpack S Line Sheet Front View">
+              </div>
+              <div class="gallery-thumb-item" onclick="switchSilpackImg('assets/images/silpack/s_line_2.jpg', this)">
+                <img src="assets/images/silpack/s_line_2.jpg" alt="Silpack S Line Smooth Board Surface">
+              </div>
+              <div class="gallery-thumb-item" onclick="switchSilpackImg('assets/images/silpack/s_line_3.jpg', this)">
+                <img src="assets/images/silpack/s_line_3.jpg" alt="Silpack S Line Print and Display Ready">
+              </div>
+            </div>
+          </div>
+
+          <!-- Quality Guarantee Card -->
+          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-circle-check" style="color: #10b981;"></i> Print &amp; Signage Engineering Highlights
+            </h4>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: #475569;">
+              <li style="display: flex; gap: 8px; align-items: flex-start;">
+                <i class="fa-solid fa-check" style="color: #2563eb; margin-top: 3px;"></i>
+                <span><strong>Corona Treated Finish:</strong> Superior ink adhesion for UV flatbed, screen, and digital printing.</span>
+              </li>
+              <li style="display: flex; gap: 8px; align-items: flex-start;">
+                <i class="fa-solid fa-check" style="color: #2563eb; margin-top: 3px;"></i>
+                <span><strong>No Flute Shadowing:</strong> Smooth outer skins eliminate rib ghosting on graphic prints.</span>
+              </li>
+              <li style="display: flex; gap: 8px; align-items: flex-start;">
+                <i class="fa-solid fa-check" style="color: #2563eb; margin-top: 3px;"></i>
+                <span><strong>Weatherproof &amp; UV Stable:</strong> Maintains vibrancy in outdoor retail environments without yellowing.</span>
+              </li>
+              <li style="display: flex; gap: 8px; align-items: flex-start;">
+                <i class="fa-solid fa-check" style="color: #2563eb; margin-top: 3px;"></i>
+                <span><strong>Effortless Fabrication:</strong> Clean die-cutting, scoring, creasing, and stapling into 3D POS displays.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: DETAILED OVERVIEW & SPECS -->
+        <div>
+          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 24px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 14px;">
+              <div>
+                <span style="font-size: 0.8rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.05em;">
+                  The Supreme Industries Limited • Material Handling Division
+                </span>
+                <h2 style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 4px 0 8px;">
+                  Silpack® "S" Line Polypropylene Print &amp; Advertising Sheet
+                </h2>
+                <p style="color: #64748b; font-size: 0.95rem; margin: 0;">
+                  Extruded Polypropylene Flute Board formulated for advertising, commercial printing, signage boards &amp; retail displays.
+                </p>
+              </div>
+              <span style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; font-size: 0.82rem; font-weight: 700; padding: 6px 14px; border-radius: 6px; white-space: nowrap;">
+                S-Flute Profile
+              </span>
+            </div>
+
+            <p style="color: #334155; font-size: 0.96rem; line-height: 1.65; margin-bottom: 20px;">
+              Supreme's Silpack S-Line is a polypropylene plastic sheet in S flute board construction, manufactured as an extruded PP corrugated sheet specifically suited to advertising, printing, stationery, and point-of-sale display applications. This fluted plastic board shares the same premium base material quality as the H-Line but is optimized for print-surface flatness and visual display requirements rather than heavy industrial transit.
+            </p>
+
+            <!-- Technical Specification Table -->
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: #0f172a; margin: 24px 0 12px; display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-sliders" style="color: #2563eb;"></i> Technical Specifications &amp; Parameters
+            </h3>
+            <table class="spec-table-custom">
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Engineering Specification</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Material Composition</strong></td>
+                  <td>100% Virgin High-Grade Polypropylene (PP) Polymer</td>
+                </tr>
+                <tr>
+                  <td><strong>Flute Construction</strong></td>
+                  <td>"S" Flute Board (twin-wall optimized for print flatness)</td>
+                </tr>
+                <tr>
+                  <td><strong>Thickness Range</strong></td>
+                  <td>2.0 mm to 10.0 mm (standard steps: 2mm, 3mm, 4mm, 5mm, 6mm, 8mm, 10mm)</td>
+                </tr>
+                <tr>
+                  <td><strong>Maximum Sheet Width</strong></td>
+                  <td>Up to 1500 mm (custom continuous lengths available)</td>
+                </tr>
+                <tr>
+                  <td><strong>Surface Treatment</strong></td>
+                  <td>Corona Treated (≥ 40 dynes/cm) for maximum ink adhesion</td>
+                </tr>
+                <tr>
+                  <td><strong>Print Process Compatibility</strong></td>
+                  <td>Flatbed UV Digital Printing, Screen Printing, Vinyl Film Lamination, Flexography</td>
+                </tr>
+                <tr>
+                  <td><strong>Color Availability</strong></td>
+                  <td>Bright White, Yellow, Red, Blue, Green, Black, and custom branded colors</td>
+                </tr>
+                <tr>
+                  <td><strong>Weather &amp; Moisture Resistance</strong></td>
+                  <td>100% Waterproof, Washable, UV Stabilized for outdoor exposure</td>
+                </tr>
+                <tr>
+                  <td><strong>Eco &amp; Safety Compliance</strong></td>
+                  <td>100% Recyclable, Non-Toxic, Food-Grade Suitable</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Quick Action Bar (3 Buttons in 1 Line) -->
+            <div class="silpack-action-btn-row">
+              <a href="https://api.whatsapp.com/send?phone=918511879428&text=Hello%20Abhinandan%20Plastopack,%20I%20am%20interested%20in%20Supreme%20Silpack%20S-Line%20Print%20and%20Advertising%20Polypropylene%20Sheets" target="_blank" class="btn-action-col btn-whatsapp-col">
+                <i class="fa-brands fa-whatsapp"></i> <span>Chat on WhatsApp</span>
+              </a>
+              <a href="tel:+918511879428" class="btn-action-col btn-call-col">
+                <i class="fa-solid fa-phone"></i> <span>Call +91 85118 79428</span>
+              </a>
+              <a href="contact.html#quote-form" class="btn-action-col btn-quote-col">
+                <i class="fa-solid fa-file-invoice"></i> <span>Request Quotation</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Difference: S-Line vs H-Line Guide Section -->
+  <section class="section" style="padding: 60px 0; background: #ffffff;">
+    <div class="container">
+      <div style="text-align: center; max-width: 760px; margin: 0 auto 40px;">
+        <span style="font-size: 0.82rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.08em;">
+          Material Selection Guide
+        </span>
+        <h2 style="font-family: var(--font-heading); font-size: 2.1rem; font-weight: 800; color: #0f172a; margin: 6px 0 12px;">
+          How Is Silpack® "S" Line Different from "H" Line?
+        </h2>
+        <p style="color: #64748b; font-size: 0.98rem; margin: 0;">
+          Understanding the right flute geometry for your specific project requirements.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+        <!-- S-Line Card -->
+        <div style="background: #f8fafc; border: 2px solid #2563eb; border-radius: 12px; padding: 28px; position: relative;">
+          <span style="background: #2563eb; color: #ffffff; font-size: 0.78rem; font-weight: 700; padding: 4px 12px; border-radius: 4px; text-transform: uppercase;">
+            Silpack "S" Line
+          </span>
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; color: #0f172a; margin: 12px 0 8px;">
+            Optimized for Printing &amp; Visual Displays
+          </h3>
+          <p style="color: #475569; font-size: 0.93rem; line-height: 1.6; margin-bottom: 16px;">
+            Features an "S" flute profile engineered to provide the smoothest possible outer skin surface. Ink flows uniformly without banding or flute lines, producing photo-realistic digital prints, vibrant screen printing, and smooth vinyl wraps.
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem; color: #334155;">
+            <li><i class="fa-solid fa-check" style="color: #2563eb;"></i> <strong>Flute Profile:</strong> S-Flute uniform surface</li>
+            <li><i class="fa-solid fa-check" style="color: #2563eb;"></i> <strong>Core Focus:</strong> Graphic adhesion, smooth finish, POS aesthetic</li>
+            <li><i class="fa-solid fa-check" style="color: #2563eb;"></i> <strong>Best Uses:</strong> Advertising signboards, retail stands, brochures</li>
+          </ul>
+        </div>
+
+        <!-- H-Line Card -->
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 28px; position: relative;">
+          <span style="background: #dc2626; color: #ffffff; font-size: 0.78rem; font-weight: 700; padding: 4px 12px; border-radius: 4px; text-transform: uppercase;">
+            Silpack "H" Line
+          </span>
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; color: #0f172a; margin: 12px 0 8px;">
+            Engineered for Heavy Industrial Packaging
+          </h3>
+          <p style="color: #475569; font-size: 0.93rem; line-height: 1.6; margin-bottom: 16px;">
+            Features vertical connecting ribs between twin walls to maximize compressive loading and vertical crush resistance. Ideal for repeated multi-trip transit boxes, tier stacking dunnage, partition plates, and building protection.
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem; color: #334155;">
+            <li><i class="fa-solid fa-check" style="color: #dc2626;"></i> <strong>Flute Profile:</strong> Vertical H-Flute structural ribs</li>
+            <li><i class="fa-solid fa-check" style="color: #dc2626;"></i> <strong>Core Focus:</strong> Compression strength, drop impact, ESD options</li>
+            <li><i class="fa-solid fa-check" style="color: #dc2626;"></i> <strong>Best Uses:</strong> Reusable transit dunnage, floor guards, partitions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Print & Advertising Applications Grid -->
+  <section class="section" style="padding: 60px 0; background: #f8fafc;">
+    <div class="container">
+      <div style="text-align: center; max-width: 760px; margin: 0 auto 40px;">
+        <span style="font-size: 0.82rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.08em;">
+          Display &amp; Commercial Uses
+        </span>
+        <h2 style="font-family: var(--font-heading); font-size: 2.1rem; font-weight: 800; color: #0f172a; margin: 6px 0 12px;">
+          Silpack® "S" Line Applications
+        </h2>
+        <p style="color: #64748b; font-size: 0.98rem; margin: 0;">
+          Used nationwide by commercial printers, advertising agencies, retail brand managers, and stationery fabricators.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 1.8rem; color: #2563eb; margin-bottom: 12px;"><i class="fa-solid fa-rectangle-ad"></i></div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Outdoor Advertising Boards</h4>
+          <p style="font-size: 0.9rem; color: #475569; line-height: 1.55; margin: 0;">
+            Weatherproof billboard panels, lamp-post kiosks, real estate property signages, and promotional event hoardings that resist heavy rain and sun exposure.
+          </p>
+        </div>
+
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 1.8rem; color: #dc2626; margin-bottom: 12px;"><i class="fa-solid fa-shop"></i></div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Retail POS &amp; POP Displays</h4>
+          <p style="font-size: 0.9rem; color: #475569; line-height: 1.55; margin: 0;">
+            Lightweight, die-cut point-of-sale standees, promotional endcap trays, dump bins, and countertop retail display units with crisp full-color branding.
+          </p>
+        </div>
+
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 1.8rem; color: #059669; margin-bottom: 12px;"><i class="fa-solid fa-building-flag"></i></div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Exhibition Booths &amp; Panels</h4>
+          <p style="font-size: 0.9rem; color: #475569; line-height: 1.55; margin: 0;">
+            Modular exhibition stand backdrops, trade show graphics, conference podium covers, and directional signage boards easy to assemble and transport.
+          </p>
+        </div>
+
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 1.8rem; color: #7c3aed; margin-bottom: 12px;"><i class="fa-solid fa-folder-open"></i></div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Stationery &amp; Document Files</h4>
+          <p style="font-size: 0.9rem; color: #475569; line-height: 1.55; margin: 0;">
+            Durable polypropylene presentation binders, ring folders, clipboard backings, portfolio envelopes, and document storage sleeves that resist tearing.
+          </p>
+        </div>
+
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 1.8rem; color: #d97706; margin-bottom: 12px;"><i class="fa-solid fa-box-open"></i></div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Lightweight Printed Sleeves</h4>
+          <p style="font-size: 0.9rem; color: #475569; line-height: 1.55; margin: 0;">
+            Custom printed outer sleeves and luxury promotional packaging shippers for consumer goods, appliances, and export products.
+          </p>
+        </div>
+
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="font-size: 1.8rem; color: #0284c7; margin-bottom: 12px;"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Wayfinding &amp; Event Signage</h4>
+          <p style="font-size: 0.9rem; color: #475569; line-height: 1.55; margin: 0;">
+            Directional arrow placards, marathon route markers, festival perimeter boards, and election campaign publicity boards with high visibility.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Supreme FAQ Section -->
+  <section class="section" style="padding: 60px 0; background: #ffffff;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 35px;">
+        <span style="font-size: 0.82rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.08em;">
+          Frequently Asked Questions
+        </span>
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: #0f172a; margin: 6px 0 10px;">
+          Commonly Asked Queries on Silpack® "S" Line
+        </h2>
+        <p style="color: #64748b; font-size: 0.95rem; margin: 0;">
+          Clarifications on print capabilities, moisture resistance, and customization options for Supreme Silpack S-Line.
+        </p>
+      </div>
+
+      <div class="faq-accordion-list">
+        <!-- FAQ 1 -->
+        <div class="faq-accordion-item active">
+          <div class="faq-question" onclick="toggleSilpackFaq(this)">
+            <span>How is the S-Line different from the H-Line polypropylene sheet?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            The S-Line fluted plastic board shares the same base PP material as the H-Line but is optimised for printing, advertising, and display applications. The H-Line is built for heavy industrial use such as packaging, partitions, and structural applications.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-accordion-item">
+          <div class="faq-question" onclick="toggleSilpackFaq(this)">
+            <span>What colours are available in the Silpack S-Line range?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Colours are available as per customer requirements. The S-Line polypropylene sheet is not limited to standard colour options, allowing full alignment with corporate branding and retail aesthetics.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-accordion-item">
+          <div class="faq-question" onclick="toggleSilpackFaq(this)">
+            <span>Does the S-Line sheet hold up against moisture for retail and outdoor use?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Yes. Silpack S-Line is waterproof and moisture resistant as verified from source material, maintaining its structure and print quality in humid retail and challenging outdoor environments without delaminating or warping.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-accordion-item">
+          <div class="faq-question" onclick="toggleSilpackFaq(this)">
+            <span>Is the S-Line suited for outdoor advertising boards and display stands?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Yes. The S-Line PP corrugated sheet is waterproof, moisture resistant, and lightweight, making it suited for outdoor advertising boards, road signages, and retail display applications.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-accordion-item">
+          <div class="faq-question" onclick="toggleSilpackFaq(this)">
+            <span>Can S-Line polypropylene sheets be cut and fabricated into custom signage sizes?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Yes. The S-Line fluted plastic board is easy to fabricate and available in customised length and width up to 1500mm, covering custom signage, POS display, and box packaging size requirements.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section style="background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%); padding: 48px 0; color: #ffffff; text-align: center;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; color: #ffffff;">
+        Order Supreme Silpack® "S" Line for Your Next Campaign
+      </h2>
+      <p style="font-size: 1.05rem; opacity: 0.95; line-height: 1.6; margin-bottom: 24px;">
+        Get wholesale pricing on Corona-treated S-Line sheets, custom cut to size with rapid dispatch across Ahmedabad and Gujarat from Abhinandan Plastopack.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://api.whatsapp.com/send?phone=918511879428&text=Hello%20Abhinandan%20Plastopack,%20I%20need%20a%20quotation%20for%20Supreme%20Silpack%20S-Line%20Sheets" target="_blank" class="btn btn-whatsapp-lg" style="background: #25d366; color: #ffffff; padding: 13px 26px;">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+        <a href="contact.html#quote-form" style="background: #0f172a; color: #ffffff; padding: 13px 26px; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 0.95rem;">
+          <i class="fa-solid fa-file-invoice"></i> Get Custom Quotation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <!-- Col 1: Brand & Overview -->
+        <div class="footer-brand">
+          <a href="index.html">
+            <div class="footer-logo-card">
+              <img src="assets/images/supreme-logo.png" alt="Supreme Logo" class="footer-logo-img">
+              <div class="footer-distributor">
+                <span class="footer-dist-label">Distributed by</span>
+                <span class="footer-dist-name">ABHINANDAN PLASTOPACK</span>
+              </div>
+            </div>
+          </a>
+          <p>
+            Authorized distributor of The Supreme Industries Limited (Material Handling Division). Delivering premium plastic crates, rotationally moulded &amp; injection moulded pallets, commercial wastebins, and customized returnable packaging across Gujarat and Western India.
+          </p>
+          <div class="footer-units">
+            <div class="footer-unit-box">
+              <strong>Head Office:</strong>
+              Survey No. 321/A/3/1 &amp; 321/A/3/2, Nr. V.R. Complex, Opp Galaxy Hotel, Nr. D.T.D.C. Courier, Sanathal Circle, Sanathal Aslali Ring Road, Sanathal - Changodar - 382210, Ahmedabad
+            </div>
+            <div class="footer-unit-box">
+              <strong>Branch Office:</strong>
+              S-1, Maharishi Complex, 2nd Floor, Near Sardar Patel Colony, Usmanpura, Ahmedabad - 380014
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="infrastructure.html"><i class="fa-solid fa-chevron-right"></i> Infrastructure</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+            <li><a href="contact.html#quote-form"><i class="fa-solid fa-chevron-right"></i> Request Quotation</a></li>
+          </ul>
+        </div>
+
+                <!-- Col 3: Product Range -->
+        <div>
+          <h4 class="footer-title">Product Range</h4>
+          <ul class="footer-links-list">
+            <li><a href="pallets.html"><i class="fa-solid fa-chevron-right"></i> Plastic Pallets</a></li>
+            <li><a href="roto-pallets.html"><i class="fa-solid fa-chevron-right"></i> Roto Moulded Pallets</a></li>
+            <li><a href="injection-pallets.html"><i class="fa-solid fa-chevron-right"></i> Injection Moulded Pallets</a></li>
+            <li><a href="crates.html"><i class="fa-solid fa-chevron-right"></i> Industrial Crates</a></li>
+            <li><a href="dustbins.html"><i class="fa-solid fa-chevron-right"></i> Wastebins &amp; Dustbins</a></li>
+            <li><a href="silpack.html"><i class="fa-solid fa-chevron-right"></i> Silpack Solutions</a></li>
+            <li><a href="silpack-h-line.html"><i class="fa-solid fa-chevron-right"></i> Silpack "H" Line</a></li>
+            <li><a href="silpack-s-line.html"><i class="fa-solid fa-chevron-right"></i> Silpack "S" Line</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Corporate Contact Details -->
+        <div>
+          <h4 class="footer-title">Get in Touch</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Head Office:</strong>
+              Sanathal Circle, Sanathal - Changodar - 382210, Ahmedabad
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <a href="tel:+918511879428">+91 85118 79428</a><br>
+              <a href="tel:+916355517631">+91 63555 17631</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <a href="mailto:crates07@gmail.com">crates07@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <span>Mon - Sat: 9:00 AM - 7:00 PM</span><br>
+              <span class="status-indicator"><span class="status-dot"></span> Open for Business</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Abhinandan Plastopack. Authorized Distributor of The Supreme Industries Limited (Material Handling Division). All Rights Reserved.</p>
+        <p class="footer-legal">Designed for High Performance Industrial Supply Across Gujarat &amp; India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions -->
+  <aside class="floating-actions" aria-label="Quick Actions">
+    <a href="https://api.whatsapp.com/send?phone=918511879428&text=Hello%20Abhinandan%20Plastopack,%20I%20am%20interested%20in%20Supreme%20Silpack%20S-Line%20Sheets" target="_blank" class="btn-float btn-float-wa" title="Instant WhatsApp Chat">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+918511879428" class="btn-float btn-float-call" title="Call Us Directly: +91 85118 79428">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="contact.html#quote-form" class="btn-float btn-float-quote" title="Request Quotation">
+      <i class="fa-solid fa-file-lines"></i>
+    </a>
+    <button type="button" class="btn-float btn-float-top" id="btnFloatTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </aside>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    function switchSilpackImg(src, thumbElem) {
+      const mainImg = document.getElementById('silpackMainImg');
+      if (!mainImg) return;
+      mainImg.style.opacity = '0';
+      setTimeout(() => {
+        mainImg.src = src;
+        mainImg.style.opacity = '1';
+      }, 150);
+      document.querySelectorAll('.gallery-thumb-item').forEach(el => el.classList.remove('active'));
+      if (thumbElem) thumbElem.classList.add('active');
+    }
+
+    function toggleSilpackFaq(questionElem) {
+      const item = questionElem.parentElement;
+      const wasActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-accordion-item').forEach(el => el.classList.remove('active'));
+      if (!wasActive) {
+        item.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
