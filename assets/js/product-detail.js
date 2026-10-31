@@ -2741,13 +2741,25 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.innerHTML = `<i class="fa-solid fa-check"></i> Quotation Request Received!`;
         submitBtn.style.background = '#10b981';
 
+        let successBox = rfqForm.querySelector('.rfq-success-msg');
+        if (!successBox) {
+          successBox = document.createElement('div');
+          successBox.className = 'rfq-success-msg';
+          successBox.style.cssText = 'background: #ecfdf5; border: 1px solid #10b981; color: #065f46; padding: 16px; border-radius: 8px; margin-top: 16px; font-size: 0.95rem; font-weight: 600; text-align: center;';
+          rfqForm.appendChild(successBox);
+        }
+        successBox.innerHTML = `<i class="fa-solid fa-circle-check" style="color: #10b981; font-size: 1.2rem; margin-right: 6px;"></i> Thank you, <strong>${name}</strong>! Your inquiry for "<strong>${product.title}</strong>" has been received successfully. Our engineering team will contact you shortly.`;
+        successBox.style.display = 'block';
+
         setTimeout(() => {
-          alert(`Thank you, ${name} (${company})!\nYour inquiry for "${product.title}" has been successfully submitted.\nOur team at Abhinandan Plastopack will contact you at ${phone} with quotation and specifications.`);
           rfqForm.reset();
           submitBtn.disabled = false;
           submitBtn.innerHTML = origText;
           submitBtn.style.background = '';
-        }, 600);
+          setTimeout(() => {
+            if (successBox) successBox.style.display = 'none';
+          }, 6000);
+        }, 2000);
       }, 1000);
     });
   }

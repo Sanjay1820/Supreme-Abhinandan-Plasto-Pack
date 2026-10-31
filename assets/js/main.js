@@ -384,14 +384,24 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.innerHTML = `<i class="fa-solid fa-check"></i> Request Received!`;
         submitBtn.style.background = '#10b981';
 
+        let successBox = quoteForm.querySelector('.quote-success-msg');
+        if (!successBox) {
+          successBox = document.createElement('div');
+          successBox.className = 'quote-success-msg';
+          successBox.style.cssText = 'background: #ecfdf5; border: 1px solid #10b981; color: #065f46; padding: 14px; border-radius: 8px; margin-top: 14px; font-size: 0.92rem; font-weight: 600; text-align: center;';
+          quoteForm.appendChild(successBox);
+        }
+        successBox.innerHTML = `<i class="fa-solid fa-circle-check" style="color: #10b981; margin-right: 6px;"></i> Thank you, <strong>${name}</strong>! Your request for "${product}" has been registered. Our team will contact you at <strong>${phone}</strong> shortly.`;
+        successBox.style.display = 'block';
+
         setTimeout(() => {
-          alert(`Thank you, ${name}! Your quotation request for "${product}" has been registered successfully. Our technical engineering team will contact you at ${phone} within 2-4 business hours.`);
           closeQuoteModal();
           quoteForm.reset();
           submitBtn.disabled = false;
           submitBtn.innerHTML = originalText;
           submitBtn.style.background = '';
-        }, 600);
+          if (successBox) successBox.style.display = 'none';
+        }, 2200);
       }, 1000);
     });
   }
@@ -412,13 +422,25 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.innerHTML = `<i class="fa-solid fa-circle-check"></i> Message Sent Successfully!`;
         submitBtn.style.background = '#10b981';
 
+        let successBox = contactPageForm.querySelector('.contact-success-msg');
+        if (!successBox) {
+          successBox = document.createElement('div');
+          successBox.className = 'contact-success-msg';
+          successBox.style.cssText = 'background: #ecfdf5; border: 1px solid #10b981; color: #065f46; padding: 16px; border-radius: 8px; margin-top: 16px; font-size: 0.95rem; font-weight: 600; text-align: center;';
+          contactPageForm.appendChild(successBox);
+        }
+        successBox.innerHTML = `<i class="fa-solid fa-circle-check" style="color: #10b981; font-size: 1.1rem; margin-right: 6px;"></i> Thank you, <strong>${name}</strong>! Your message has been received. Our team will get back to you shortly.`;
+        successBox.style.display = 'block';
+
         setTimeout(() => {
-          alert(`Thank you, ${name}! Your message has been sent directly to crates07@gmail.com. We will reach out to you shortly.`);
           contactPageForm.reset();
           submitBtn.disabled = false;
           submitBtn.innerHTML = originalText;
           submitBtn.style.background = '';
-        }, 700);
+          setTimeout(() => {
+            if (successBox) successBox.style.display = 'none';
+          }, 6000);
+        }, 2000);
       }, 1200);
     });
   }
