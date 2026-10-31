@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Update WhatsApp URL
       if (modalWaBtn) {
         const waText = encodeURIComponent(`Hello Abhinandan Plastopack, I am interested in ${title} (${badge}). Please provide quotation, delivery time, and technical specifications.`);
-        modalWaBtn.href = `https://api.whatsapp.com/send?phone=918511879428&text=${waText}`;
+        modalWaBtn.href = `https://api.whatsapp.com/send?phone=916355517631&text=${waText}`;
       }
     } else {
       // General Inquiry (e.g. from header "Get Quote" button)
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (modalHiddenProduct) modalHiddenProduct.value = title;
       if (modalWaBtn) {
         const waText = encodeURIComponent(`Hello Abhinandan Plastopack, I visited your website and would like technical consultation and quotation.`);
-        modalWaBtn.href = `https://api.whatsapp.com/send?phone=918511879428&text=${waText}`;
+        modalWaBtn.href = `https://api.whatsapp.com/send?phone=916355517631&text=${waText}`;
       }
       // For general header clicks, reveal the form directly
       if (modalCollapsibleForm) {
@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const product = btn.getAttribute('data-product') || 'Precision Industrial Rollers';
       const text = encodeURIComponent(`Hello Abhinandan Plastopack, I visited your website and would like technical consultation and quotation for: ${product}`);
-      const waUrl = `https://api.whatsapp.com/send?phone=918511879428&text=${text}`;
+      const waUrl = `https://api.whatsapp.com/send?phone=916355517631&text=${text}`;
       window.open(waUrl, '_blank');
     });
   });

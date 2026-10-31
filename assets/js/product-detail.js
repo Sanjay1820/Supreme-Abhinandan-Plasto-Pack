@@ -2686,7 +2686,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const waText = encodeURIComponent(
       `Hello Abhinandan Plastopack, I visited your website and I am interested in ${product.title} (${product.category}). Please share official wholesale quotation, catalogue, and delivery timeline.`
     );
-    detailWaBtn.href = `https://api.whatsapp.com/send?phone=918511879428&text=${waText}`;
+    detailWaBtn.href = `https://api.whatsapp.com/send?phone=916355517631&text=${waText}`;
   }
 
   // 8. Render 3 Related Products in Spotlight Below
@@ -2713,7 +2713,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="product-detail.html?product=${k}" class="btn btn-primary">
               <i class="fa-solid fa-eye"></i> View Details
             </a>
-            <a href="https://api.whatsapp.com/send?phone=918511879428&text=Hello%20Abhinandan%20Plastopack,%20I%20am%20interested%20in%20${encodeURIComponent(p.title)}" class="btn btn-outline" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=916355517631&text=Hello%20Abhinandan%20Plastopack,%20I%20am%20interested%20in%20${encodeURIComponent(p.title)}" class="btn btn-outline" target="_blank">
               <i class="fa-brands fa-whatsapp"></i> Chat
             </a>
           </div>

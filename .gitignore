@@ -3,6 +3,7 @@ dist-home/
 .vercel/
 scratch/
 *.log
+*.zip
 /*.png
 .env
 .env.*
