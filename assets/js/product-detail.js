@@ -2689,6 +2689,25 @@ document.addEventListener('DOMContentLoaded', () => {
     detailWaBtn.href = `https://api.whatsapp.com/send?phone=916355517631&text=${waText}`;
   }
 
+  // 7b. Dynamic PDF Catalogue Button based on product category
+  const detailPdfBtn = document.getElementById('detailPdfBtn');
+  if (detailPdfBtn) {
+    let pdfUrl = 'ROTO_Moulded_Crates.pdf';
+    const catSlug = (product.categorySlug || '').toLowerCase();
+    const catName = (product.category || '').toLowerCase();
+    
+    if (catSlug.includes('dustbin') || catName.includes('dustbin') || catName.includes('wastebin')) {
+      pdfUrl = 'Cat%20-%20SUPREME%20Dustbins.pdf';
+    } else if (catSlug.includes('injection') || catName.includes('injection') || (product.series && product.series.includes('SIM'))) {
+      pdfUrl = 'DOC-20231009-WA0012..pdf';
+    } else if (catSlug.includes('roto') || catName.includes('roto') || catName.includes('pallet')) {
+      pdfUrl = 'Roto%20Moulded%20Pallets%20Brochure%20New%20Layout%2028.08.pdf';
+    } else {
+      pdfUrl = 'ROTO_Moulded_Crates.pdf';
+    }
+    detailPdfBtn.href = pdfUrl;
+  }
+
   // 8. Render 3 Related Products in Spotlight Below
   const relatedGrid = document.getElementById('relatedCardsGrid');
   if (relatedGrid) {
